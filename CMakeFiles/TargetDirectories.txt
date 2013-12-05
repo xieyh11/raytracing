@@ -1,0 +1,1 @@
+/home/yuanhang/Documents/raytracing/CMakeFiles/raytracing.dir

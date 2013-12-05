@@ -1,0 +1,33 @@
+#!/bin/sh
+
+set -e
+
+rm_conffile() {
+    local PKGNAME="$1"
+    local CONFFILE="$2"
+
+    [ -e "$CONFFILE" ] || return 0
+
+    local md5sum="$(md5sum $CONFFILE | sed -e 's/ .*//')"
+    local old_md5sum="$(dpkg-query -W -f='${Conffiles}' $PKGNAME | \
+            sed -n -e "\' $CONFFILE ' { s/ obsolete$//; s/.* //; p }")"
+    if [ "$md5sum" != "$old_md5sum" ]; then
+        echo "Obsolete conffile $CONFFILE has been modified by you."
+        echo "Saving as $CONFFILE.dpkg-bak ..."
+        mv -f "$CONFFILE" "$CONFFILE".dpkg-bak
+    else
+        echo "Removing obsolete conffile $CONFFILE ..."
+        rm -f "$CONFFILE"
+    fi
+}
+
+case $1 in
+	(upgrade|install)
+	if [ "LIBC-FLAVOR" = "libc6-xen" ] && \
+		dpkg --compare-versions "$2" lt "2.16-0ubuntu1"; then
+		rm_conffile libc6-xen "/etc/ld.so.conf.d/xen.conf"
+	fi
+	;;
+	(*)
+	;;
+esac

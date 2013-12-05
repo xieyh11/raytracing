@@ -1,0 +1,33 @@
+MREMAP is unimplemented on GNU/Hurd for now
+
+Index: eglibc-2.16/bits/mman.h
+===================================================================
+--- eglibc-2.16.orig/bits/mman.h	2012-07-23 00:41:02.000000000 +0200
++++ eglibc-2.16/bits/mman.h	2012-07-23 00:42:23.000000000 +0200
+@@ -85,10 +85,12 @@
+ #define MS_INVALIDATE	2		/* Invalidate the caches.  */
+ 
+ /* Flags for `mremap'.  */
++#if 0
+ #ifdef __USE_GNU
+ # define MREMAP_MAYMOVE	1		/* Mapping address may change.  */
+ # define MREMAP_FIXED	2		/* Fifth argument sets new address.  */
+ #endif
++#endif
+ 
+ /* Flags for `mlockall' (can be OR'd together).  */
+ #define MCL_CURRENT	1		/* Lock all currently mapped pages.  */
+Index: eglibc-2.16/malloc/memusage.c
+===================================================================
+--- eglibc-2.16.orig/malloc/memusage.c	2012-07-23 00:41:02.000000000 +0200
++++ eglibc-2.16/malloc/memusage.c	2012-07-23 00:42:23.000000000 +0200
+@@ -673,6 +673,9 @@
+   return result;
+ }
+ 
++#ifndef MREMAP_FIXED
++#define MREMAP_FIXED 0
++#endif
+ 
+ /* `mremap' replacement.  We do not have to keep track of the size since
+    `munmap' will get it as a parameter.  */

@@ -1,0 +1,351 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"set",
+				"setPoint"
+			],
+			[
+				"cur",
+				"currentdepth"
+			],
+			[
+				"chil",
+				"child0"
+			],
+			[
+				"obj",
+				"object"
+			],
+			[
+				"tim",
+				"timesVector"
+			],
+			[
+				"theta",
+				"theta"
+			],
+			[
+				"o",
+				"oppositeVector"
+			],
+			[
+				"the",
+				"theta2"
+			],
+			[
+				"time",
+				"timesNumber"
+			],
+			[
+				"ne",
+				"nextaxis"
+			],
+			[
+				"cu",
+				"currentaxis"
+			],
+			[
+				"min",
+				"minobject"
+			],
+			[
+				"ch",
+				"child0"
+			],
+			[
+				"in",
+				"include"
+			],
+			[
+				"_Bsp",
+				"_BspElement"
+			],
+			[
+				"_B",
+				"_BspElement"
+			],
+			[
+				"T",
+				"TRACING_H"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "raytracing.cpp",
+			"settings":
+			{
+				"buffer_size": 2489,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "raytracing.h",
+			"settings":
+			{
+				"buffer_size": 16418,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tracing.h",
+			"settings":
+			{
+				"buffer_size": 2549,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Makefile/Make.sublime-build",
+	"command_palette":
+	{
+		"height": 75.0,
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"P",
+				"Package Control: Install Package"
+			],
+			[
+				"pagckage ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 188.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/yuanhang/.config/sublime-text-2/Packages/SublimeGDB/SublimeGDB.sublime-settings",
+		"/home/yuanhang/Documents/raytracing/raytracing.sublime-project",
+		"/home/yuanhang/.config/sublime-text-2/Packages/User/SublimeGDB.sublime-settings",
+		"/home/yuanhang/.config/sublime-text-2/Packages/GoGdb/Default.sublime-keymap",
+		"/home/yuanhang/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/yuanhang/.config/sublime-text-2/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/yuanhang/Documents/raytracing/raytracing.h"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"p2",
+			"p0",
+			"min",
+			"child0",
+			"tmp1",
+			"double",
+			";\n"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "raytracing.cpp",
+					"settings":
+					{
+						"buffer_size": 2489,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1515,
+								1515
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 328.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "raytracing.h",
+					"settings":
+					{
+						"buffer_size": 16418,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12878,
+								12878
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 11737.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "tracing.h",
+					"settings":
+					{
+						"buffer_size": 2549,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								845,
+								845
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/C++/C++.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1440.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 40.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 169.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/home/yuanhang/Documents/raytracing/raytracing.cpp"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true
+}
